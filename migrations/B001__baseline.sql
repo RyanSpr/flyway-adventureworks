@@ -6,7 +6,7 @@
 */
 
 -- flyway:executeInTransaction=false
-DECLARE @BackupFilePath NVARCHAR(128) = N'${flyway:workingDirectory}\backups\AutoBackup_Customer.bak';
+DECLARE @BackupFilePath NVARCHAR(128) = N'${flyway:workingDirectory}\backups\AutoBackup.bak';
 DECLARE @DatabaseName NVARCHAR(128) = N'${flyway:database}';
 DECLARE @LogicalDataFileName NVARCHAR(128) = 'AdventureWorks2016_Data';
 DECLARE @LogicalLogFileName NVARCHAR(128) = 'AdventureWorks2016_Log';

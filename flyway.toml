@@ -25,6 +25,7 @@ url = "jdbc:sqlserver://localhost;databaseName=AutoPilotCheck;encrypt=true;integ
 [environments.Build]
 url = "jdbc:sqlserver://localhost;databaseName=AutoPilotBuild;encrypt=true;integratedSecurity=true;trustServerCertificate=true"
 
+
 [flyway]
 locations = [ "filesystem:migrations" ]
 mixed = true

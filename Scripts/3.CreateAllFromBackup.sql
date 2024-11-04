@@ -1,4 +1,4 @@
-DECLARE @BackupFilePath NVARCHAR(128) = N'C:\WorkingFolders\FWD\AutoRodent\backups\AutoBackup.bak';  -- Step 1. Change me to the backup location!
+DECLARE @BackupFilePath NVARCHAR(128) = N'C:\WorkingFolders\FWD\flyway-adventureworks\backups\AutoBackup.bak';  -- Step 1. Change me to the backup location!
 DECLARE @LogicalDataFileName NVARCHAR(128) = N'AdventureWorks2016_Data';  -- Step 2. Make these match the original DB! Psst, you can use 2.FindLogicalPaths.sql
 DECLARE @LogicalLogFileName NVARCHAR(128) = N'AdventureWorks2016_Log';  -- Step 2. Make these match the original DB! Psst, you can use 2.FindLogicalPaths.sql
 DECLARE @DataFilePath NVARCHAR(260);  -- Declare a variable to hold the data file path
@@ -17,7 +17,7 @@ DECLARE @DatabaseList TABLE (  -- Create a table variable to hold the list of da
 
 -- Insert the database names into the table variable
 INSERT INTO @DatabaseList (DatabaseName)
-VALUES ('AutoPilotDev'), ('AutoPilotTest'), ('AutoPilotProd'), ('AutoPilotShadow'), ('AutoPilotBuild'), ('AutoPilotCheck');
+VALUES ('AutoPilotDev'), ('AutoPilotProd'), ('AutoPilotShadow'), ('AutoPilotBuild');
 
 DECLARE @Counter INT = 1;  -- Initialize a counter for the loop
 DECLARE @TotalCount INT = (SELECT COUNT(*) FROM @DatabaseList);  -- Get the total count of databases
