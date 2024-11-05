@@ -1,0 +1,6 @@
+CREATE TABLE [dbo].[SocialMedia](
+	[InstagramHandle] [NCHAR](10) NULL,
+	[FacebookAccount] [NCHAR](10) NULL,
+	[MySpaceUsername] [NCHAR](10) NULL
+) ON [PRIMARY]
+GO
