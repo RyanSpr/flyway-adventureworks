@@ -7,8 +7,8 @@ GO
 
 
 
-ALTER TABLE Person.Address ADD COLUMN RoadName varchar(30);
-ALTER TABLE Person.Address ADD COLUMN HouseName varchar(30);
+ALTER TABLE Person.Address ADD RoadName varchar(30);
+ALTER TABLE Person.Address ADD HouseName varchar(30);
 GO
 
 
